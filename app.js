@@ -68,16 +68,6 @@ io.sockets.on('connection', function (socket) {
             ss.emit("controlling", {action:"enter"}); 
             }
      }
-     else if(data.action === "swipeLeft"){
-      if(ss != undefined){
-          ss.emit("controlling", {action:"goLeft"}); 
-          }
-     }
-     else if(data.action === "swipeRight"){
-       if(ss != undefined){
-           ss.emit("controlling", {action:"goRight"}); 
-           }
-     }
    }
  });
 
